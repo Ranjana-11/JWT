@@ -1,36 +1,75 @@
-by me
-express server create : npm i express dotenv cors mongoose
-db connection through atlas
-create database : user.js
-signup API (user register)
-username, email, password receive karna
-password safe banana (hash)
-MongoDB me save karna
-npm install jsonwebtoken bcrypt
-npm i jsonwebtoken
-jwt secret in .env file random string
-signup route
-login route
-middleware
-sirf logged-in user hi access kar sake
-token check hoga
-fake user block ho jayega
+# JWT Authentication System
+A secure JWT Authentication System built using the MERN stack. This project allows users to register, log in, access protected routes, and log out using JSON Web Tokens (JWT).
 
-frontend
-pages folder: login ,signup, profile page
-browserRouter : app me multiple pages (routes) hain
-Routes: contains all routes
-route: contain specific route
-app.jsx: paggse ka navigation manager
-npm i react-router-dom
+## Features
+- User Signup
+- User Login
+- JWT Authentication
+- Protected Profile Route
+- Logout Functionality
+- Password Hashing using bcrypt
+- 404 Error Page
+- Responsive UI
 
-signup page
-creaet form
+## Tech Stack
 
-login page
-Abhi login page ka kaam sirf:
-Email aur Password lena.
-Backend ke /login API ko call karna.
-JWT token receive karna.
-Token ko localStorage me save karna.
-User ko /profile par redirect karna.
+### Frontend
+- React.js
+- React Router DOM
+- Axios
+- CSS
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT
+- bcrypt
+
+## Folder Structure
+JWT-Authentication/
+│
+├── backend/
+├── frontend/
+└── README.md
+
+## Installation
+
+### Clone the repository
+```bash
+git clone <your-repository-url>
+```
+
+### Backend
+```bash
+cd backend
+npm install
+```
+
+Create a `.env` file:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
+
+Start the backend:
+```bash
+cd Backend
+node server.js /nodemon server.js
+
+### Frontend
+```bash
+cd Frontend
+npm install
+npm run dev
+
+## Future Improvements
+- Implement Forgot Password functionality.
+- Add Email Verification during signup.
+- Introduce Refresh Tokens for improved security.
+- Add Role-Based Access Control (Admin/User).
+- Enable Update Profile functionality.
+- Allow users to change their password.
